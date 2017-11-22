@@ -18,7 +18,7 @@ public class BasicJava{
         int counter = 0;
         for (int i = 0; i<=255; i++){
             counter += i;
-            System.out.println("New Number" + i + "Sum:" + counter);
+            System.out.println("New Number " + i + " Sum: " + counter);
         }
     }
     public void arrayIter(int[] arr){
@@ -39,21 +39,23 @@ public class BasicJava{
     public void getAvg(int[] arr){
         int sum = 0;
         for (int i = 0; i<arr.length; i++){
-            sum += i;
+            sum += arr[i];
         }
         System.out.println(sum / arr.length);
     }
     public void oddArray(){
         ArrayList<Integer> y = new ArrayList<Integer>();
-        for( int i = 0; i<=255; i++){
-            y.add(i);
+        for( int i = 1; i<=255; i++){
+            if(i % 2 != 0){
+                y.add(i);
+            }
         }
         System.out.println(y);
     }
     public void greaterThan(int[] arr, int num){
         int counter = 0;
         for(int i = 0; i<arr.length;i++){
-            if(i > num){
+            if(arr[i] > num){
                 counter += 1;
             }
             continue;
@@ -69,20 +71,37 @@ public class BasicJava{
     public void noNegs(ArrayList<Integer> arr){
         for(int i = 0; i<arr.size(); i++){
             if (arr.get(i) < 0){
-                arr.set(i, 0)
+                arr.set(i, 0);
             }
-            continue
+            continue;
         }
-        System.out.println(arr)
+        System.out.println(arr);
     }
     public void minMaxAvg(int[] arr){
         ArrayList<Integer> newArr = new ArrayList<Integer>();
-        int max = arr[i];
-        int min = arr[i];
+        int max = arr[0];
+        int min = arr[0];
         int avg = 0;
         for (int i = 0; i<arr.length; i++){
-            if (i > max)
+            if (arr[i] > max){
+                max = arr[i];
+            }
+            if (arr[i] < min){
+                min = arr[i];
+            }
+            avg += arr[i];
         }
+        newArr.add(max);
+        newArr.add(min);
+        newArr.add(avg / arr.length);
+        System.out.println(newArr);
     }
-
+    public void toFront(int[] arr){
+        ArrayList<Integer> newArr = new ArrayList<Integer>();
+        for(int i = 1; i<arr.length; i++){
+            newArr.add(arr[i]);
+        }
+        newArr.add(0);
+        System.out.println(newArr);
+    }
 }
