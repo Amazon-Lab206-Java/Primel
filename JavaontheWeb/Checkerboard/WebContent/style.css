@@ -1,0 +1,15 @@
+.even {
+	background-color: blue;
+}
+
+.odd {
+	background-color: pink;
+}
+
+div {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	font-size:0;
+	
+}

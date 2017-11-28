@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8">
+
+<breakfastMenu>
+    <item category="entree">
+        <name>Pancakes</name>
+        <description>Some classic pancakes</description>
+        <price>$10.99</price>
+    </item>
+    <item category="entree">
+        <name>Belgian Waffle</name>
+        <description>A Belgian Waffle</description>
+        <price>$12.99</price>
+    </item>
+    <item category="entree">
+        <name>Eggs</name>
+        <description>Two eggs any style</description>
+        <price>$3.99</price>
+    </item>
+    <item category="beverage">
+        <name>Water</name>
+        <description>Sparkling or not</description>
+        <price>$0.00</price>
+    </item> 
+    <item category="beverage">
+        <name>Coffee</name>
+        <description>Black or not</description>
+        <price>$0.50</price>
+    </item> 
+</breakfastMenu>
+
+<lunchMenu>
+    <item category="entree">
+        <name>Chicken Salad</name>
+        <description>A salad with chicken</description>
+        <price>$10.99</price>
+    </item>
+    <item category="entree">
+        <name>Chicken Sandwich</name>
+        <description>A sandwich with chicken</description>
+        <price>$12.99</price>
+    </item>
+    <item category="entree">
+        <name>Pastrami Sandwich</name>
+        <description>A sandwich made with pastrami</description>
+        <price>$13.99</price>
+    </item>\
+    <item category="beverage">
+        <name>Water</name>
+        <description>Sparkling or not</description>
+        <price>$0.00</price>
+    </item> 
+    <item category="beverage">
+        <name>Coca-Cola</name>
+        <description>A fizzy cola soda</description>
+        <price>$0.99</price>
+    </item>
+</lunchMenu>
+
+</dinnerMenu>
+    <item category="entree">
+        <name>Steak</name>
+        <description>Red meat</description>
+        <price>$10.99</price>
+    </item>
+    <item category="entree">
+        <name>Chicken</name>
+        <description>White meat</description>
+        <price>$12.99</price>
+    </item>
+    <item category="entree">
+        <name>Pasta</name>
+        <description>Choice of noodle and sauce</description>
+        <price>$13.99</price>
+    </item>
+    <item category="beverage">
+        <name>Coca-Cola</name>
+        <description>A fizzy cola soda</description>
+        <price>$0.99</price>
+    </item>   
+    <item category="beverage">
+        <name>Water</name>
+        <description>Sparkling or not</description>
+        <price>$0.00</price>
+    </item> 
+</dinnerMenu>
