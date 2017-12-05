@@ -8,10 +8,10 @@
 <title>Update Language Info</title>
 </head>
 <body>
-	<p><a href="/languages/delete/${id}">Delete</a></p>
+	<p><a href="/languages/delete/${language.id}">Delete</a></p>
 	<p><a href="/languages"> Dashboard</a></p>
 	
-	<form:form method="POST" action="/languages/edit/${id}" modelAttribute="language">
+	<form:form method="POST" action="/languages/edit/${language.id}" modelAttribute="language">
 	    <form:label path="name">Name
 	    <form:errors path="name"/>
 	    <form:input path="name"/></form:label>

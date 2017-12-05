@@ -27,6 +27,8 @@
 	    <form:errors path="numberOfPages"/>     
 	    <form:input type="number" path="numberOfPages"/></form:label>
 	    
+	    <form:hidden path="id"/>
+	    
 	    <input type="submit" value="Submit"/>
 	</form:form>
 </body>

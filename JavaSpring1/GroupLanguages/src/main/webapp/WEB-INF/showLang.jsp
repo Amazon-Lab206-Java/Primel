@@ -12,7 +12,7 @@
 	<p>Name: <c:out value="${language.name}"/></p>
 	<p>Creator: <c:out value="${language.creator}"/></p>
 	<p>Current Version: <c:out value="${language.currentVersion}"/></p>
-	<p><a href="/languages/edit/${index}">Edit</a>
-			    <a href="/languages/delete/${index}">Delete</a></p>
+	<p><a href="/languages/edit/${language.id}">Edit</a>
+			    <a href="/languages/delete/${language.id}">Delete</a></p>
 </body>
 </html>

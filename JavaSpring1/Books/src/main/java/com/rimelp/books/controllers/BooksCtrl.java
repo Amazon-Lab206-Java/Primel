@@ -34,9 +34,8 @@ public class BooksCtrl {
     }
 	
 	@RequestMapping("/books/{index}")
-    public String findBookByIndex(Model model, @PathVariable("index") int index) {
-        Book book = bookService.findBookByIndex(index);
-        model.addAttribute("book", book);
+    public String findBookById(Model model, @PathVariable("index") Long index) {
+        model.addAttribute("book", bookService.findBookById(index));
         return "showBook.jsp";
     }
 	
@@ -57,8 +56,8 @@ public class BooksCtrl {
 	}
 	
 	@RequestMapping("/books/edit/{id}")
-	public String editBook(@PathVariable("id") int id, Model model) {
-		Book book = bookService.findBookByIndex(id);
+	public String editBook(@PathVariable("id") Long id, Model model) {
+		Book book = bookService.findBookById(id);
 		if(book != null) {
 			model.addAttribute("book", book);
 			return "editBook.jsp";
@@ -69,18 +68,18 @@ public class BooksCtrl {
 	}
 	
 	@PostMapping("/books/edit/{id}")
-	public String updateBook(@PathVariable("id") int id, @Valid @ModelAttribute("book") Book book, BindingResult result) {
+	public String updateBook(@PathVariable("id") Long id, @Valid @ModelAttribute("book") Book book, BindingResult result) {
 		if (result.hasErrors()) {
 			return "editBook.jsp";
 		}
 		else {
-			bookService.updateBook(id, book);
+			bookService.updateBook(book);
 			return "redirect:/books";
 		}
 	}
 	
 	@RequestMapping(value="/books/delete/{id}")
-	public String destroyBook(@PathVariable("id") int id) {
+	public String destroyBook(@PathVariable("id") long id) {
 		bookService.destroyBook(id);
 		return "redirect:/books";
 	}
