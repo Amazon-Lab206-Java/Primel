@@ -15,14 +15,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Language {
-    public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
+ 
 	@Id
     @GeneratedValue
     private Long id;
@@ -91,5 +84,14 @@ public class Language {
 	public void setCurrentVersion(String currentVersion) {
 		this.currentVersion = currentVersion;
 	}
+	
+	public Long getId() {
+		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	
 }
